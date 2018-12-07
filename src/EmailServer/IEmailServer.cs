@@ -22,11 +22,8 @@ namespace EmailServer
         /// <param name="verCode">验证码</param>
         /// <param name="emailAddress">目的地邮箱地址</param>
         /// <returns></returns>
-<<<<<<< HEAD
         bool SendVerCodeByEmail(string verCode,string emailAddress);
-=======
-        bool SendVerCodeByEmail(int verCode,string emailAddress);
->>>>>>> 3eadf37... 初始版本
+
         /// <summary>
         /// 保存邮箱账号
         /// </summary>

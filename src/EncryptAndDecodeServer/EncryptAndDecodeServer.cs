@@ -16,11 +16,8 @@ namespace EncryptAndDecodeServer
             {
                 aes.Key = Encoding.UTF8.GetBytes(secretKey);
                 aes.IV = Encoding.UTF8.GetBytes(IV);
-<<<<<<< HEAD
                 aes.Mode = CipherMode.CBC;
                 aes.Padding = PaddingMode.PKCS7;
-=======
->>>>>>> 3eadf37... 初始版本
                 var enc = aes.CreateDecryptor(aes.Key, aes.IV);
                 using (System.IO.MemoryStream ms = new System.IO.MemoryStream())
                 {
@@ -41,11 +38,8 @@ namespace EncryptAndDecodeServer
                 //aes的key和iv有长度要求
                 aes.Key = Encoding.UTF8.GetBytes(secretKey);
                 aes.IV = Encoding.UTF8.GetBytes(IV);
-<<<<<<< HEAD
                 aes.Mode = CipherMode.CBC;
                 aes.Padding = PaddingMode.PKCS7;
-=======
->>>>>>> 3eadf37... 初始版本
                 var enc = aes.CreateEncryptor(aes.Key, aes.IV);
                 using (MemoryStream ms = new MemoryStream())
                 {

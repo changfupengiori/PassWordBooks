@@ -1,18 +1,11 @@
 ﻿/* * 
  * author:changfupeng
  * createDate:2018-11-19 13:41
-<<<<<<< HEAD
  * remark:邮件服务
-=======
- * remark:邮件服务接口
->>>>>>> 3eadf37... 初始版本
- * 
  * */
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-<<<<<<< HEAD
 using System.Net.Mail;
 
 namespace EmailServer
@@ -33,7 +26,7 @@ namespace EmailServer
         /// 邮件服务
         /// </summary>
         private SmtpClient _clientSmtp = new SmtpClient();
-        private static EmailServer _emailServer=null;
+        private static EmailServer _emailServer = null;
         private static readonly object SyncRoot = new object();
         /// <summary>
         /// 获取邮件服务的地址
@@ -66,55 +59,6 @@ namespace EmailServer
             return true;
         }
         /// <summary>
-        /// 初始化用于检查配置的账号等相关信息
-        /// </summary>
-        /// <param name="accountKey">初始化具体使用某一套账号发送</param>
-        /// <returns></returns>
-=======
-
-namespace EmailServer
-{
-    public class EmailServer : IEmailServer
-    {
-        public bool initEmailServer()
-        {
-            throw new NotImplementedException();
-        }
-
->>>>>>> 3eadf37... 初始版本
-        public bool initEmailServer(int accountKey)
-        {
-            throw new NotImplementedException();
-        }
-<<<<<<< HEAD
-        /// <summary>
-        /// 保存邮箱账号
-        /// </summary>
-        /// <param name="account">账号</param>
-        /// <param name="password">密码</param>
-        /// <param name="port">端口</param>
-        /// <param name="serverpath">服务地址</param>
-=======
-
->>>>>>> 3eadf37... 初始版本
-        public void SaveEmailAccount(string account, string password, int port, string serverpath)
-        {
-            throw new NotImplementedException();
-        }
-<<<<<<< HEAD
-        /// <summary>
-        /// 发送测试邮件测试邮箱用户配置账号的时候使用
-        /// </summary>
-        /// <returns></returns>
-=======
-
->>>>>>> 3eadf37... 初始版本
-        public bool SendEmailTest()
-        {
-            throw new NotImplementedException();
-        }
-<<<<<<< HEAD
-        /// <summary>
         /// 通过邮件发送验证码
         /// </summary>
         /// <param name="verCode">验证码</param>
@@ -135,7 +79,7 @@ namespace EmailServer
             }
             catch (SmtpException ex)
             {
-                ///log4记录邮件发送的异常
+                //log4记录邮件发送的异常
                 return false;
             }
         }
@@ -146,16 +90,25 @@ namespace EmailServer
         private MailMessage CreateMessageModel()
         {
             MailMessage msg = new MailMessage();
-            msg.From = new MailAddress("changfupengiori@126.com", "密码本系统邮件服务");            
-            msg.SubjectEncoding = Encoding.UTF8;//邮件标题编码  
+            msg.From = new MailAddress("changfupengiori@126.com", "密码本系统邮件服务");
+            msg.SubjectEncoding = System.Text.Encoding.UTF8;//邮件标题编码  
             msg.IsBodyHtml = true;//是否是HTML邮件  
             return msg;
-=======
+        }
 
-        public bool SendVerCodeByEmail(int verCode, string emailAddress)
+        public void SaveEmailAccount(string account, string password, int port, string serverpath)
         {
             throw new NotImplementedException();
->>>>>>> 3eadf37... 初始版本
+        }
+
+        public bool initEmailServer(int accountKey)
+        {
+            throw new NotImplementedException();
+        }
+
+        public bool SendEmailTest()
+        {
+            throw new NotImplementedException();
         }
     }
 }

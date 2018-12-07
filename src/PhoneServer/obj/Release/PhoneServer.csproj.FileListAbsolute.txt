@@ -1,4 +1,0 @@
-C:\Users\Administrator\Documents\Visual Studio 2015\Projects\PassWordBooks\PhoneServer\bin\Release\PhoneServer.dll
-C:\Users\Administrator\Documents\Visual Studio 2015\Projects\PassWordBooks\PhoneServer\bin\Release\PhoneServer.pdb
-C:\Users\Administrator\Documents\Visual Studio 2015\Projects\PassWordBooks\PhoneServer\obj\Release\PhoneServer.dll
-C:\Users\Administrator\Documents\Visual Studio 2015\Projects\PassWordBooks\PhoneServer\obj\Release\PhoneServer.pdb

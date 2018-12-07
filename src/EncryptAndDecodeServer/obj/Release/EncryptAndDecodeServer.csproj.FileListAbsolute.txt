@@ -1,4 +1,0 @@
-C:\Users\Administrator\Documents\Visual Studio 2015\Projects\PassWordBooks\EncryptAndDecodeServer\bin\Release\EncryptAndDecodeServer.dll
-C:\Users\Administrator\Documents\Visual Studio 2015\Projects\PassWordBooks\EncryptAndDecodeServer\bin\Release\EncryptAndDecodeServer.pdb
-C:\Users\Administrator\Documents\Visual Studio 2015\Projects\PassWordBooks\EncryptAndDecodeServer\obj\Release\EncryptAndDecodeServer.dll
-C:\Users\Administrator\Documents\Visual Studio 2015\Projects\PassWordBooks\EncryptAndDecodeServer\obj\Release\EncryptAndDecodeServer.pdb
