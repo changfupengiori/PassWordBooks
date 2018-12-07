@@ -1,0 +1,22 @@
+﻿{
+	"Account": "135123456789",
+	"Remark": "用于记录此账号所需要的描述文件",
+	"PassWordHelp": "帮助记忆密码文档",
+	"PassWordCertificate": "用于验证主账号密码的证书",
+	"Phone": "用户的手机号格式：135****1234，中间为认证证书",
+	"Email": "用户的邮箱号格式：chang****p@126.com，中间为认证证书",
+	"CreateDate": "创建时间，提醒用户修改密码。主账号不可修改3个月提醒事件",
+	"IsComputer":"true 是否指定计算机属性来加密主账号",
+	"PassWordBooks": [{
+		"Account": "此密码的账号",
+		"Name": "用户自定义名称",
+		"Path": "服务地址,一般此账号密码的服务地址,允许空",
+		"FilePath": "sdkljreklwjlkerjwlndfssdfs.db",
+		"Type": "http，file，zip，other",
+		"Remark": "用于记录此账号所需要的描述文件",
+		"PassWordHelp": "二次密码验证提示，不能通过找回密码找回慎用",
+		"Tags": ["银行账号", "自定义标签", "自定义标签2","最多10个标签"],
+		"CreateDate": "创建时间",
+		"Redo": "以月为单位计算,0则不提醒修改,默认3"
+	}]
+}

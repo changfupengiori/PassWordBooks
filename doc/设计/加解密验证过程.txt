@@ -1,0 +1,123 @@
+测试加密解密的过程
+
+准备数据：
+1、机器码：1234567890
+2、主账号密码：changfupeng/cfp123456
+3、加密密文：
+{
+	"SecondAuthentication": "PhysicsCode",
+	"Date": [{
+		"key": "主密码",
+		"value": "真实的密码"
+	}, {
+		"key": "用户的第二个密码",
+		"value": "真实的密码"
+	}, {
+		"key": "U盾密码",
+		"value": "真实的U盾密码"
+	}]
+}
+
+加密步骤（使用机器码）：
+1、机器码sha1：01b307acba4f54f55aafc33bb06bbbf6ca803e9a
+2、主账号HMACSHA512码：f6898a683d4d456790e97fecdacb0587f904091d3db12b736bd3a5712df145b45a78f0128f8006815a9e1cfb3a3a2678dd40d766d29583286554f5f8317a75da
+3、主账号证书：f4f61d46bf72768e175c628b3ff33a95
+4、生成加密密码((HMACSHA512+MD532)>MD532)：0e5615ccd29d2ce585d229ca988a2b3a
+5、物理密码随机生成：123cfpCFP321
+5.1、物理密码md532：cb23b555afa7f922b9e8e83a5a11f725
+5.2、物理密码客户存储：U2FsdGVkX19yTwta2JVi9BmFx1/SoeItS0qhzL4BmRk=
+6、加密得到密文：
+U2FsdGVkX1+WiuVOQx02pRaCnmA9xed/+86yzc26VDVGChg+FoiGONdDFx7evS5m
+8Wn1OJlOxV8jqcgKbbTzQaSacddVEV3Zg0lGvMOStepx3UVb8LskDmkWy+SInpcQ
+TuhBj3pilkpBybpkFZ0+RCbqayTUjxt2Jt54pNBU3Rvx3rS/P0GNOkpPaAWpl1Sd
+n6fMrn5THOBf5HUntdlcJsQHynLe6A7kh8eLJ92lp0lA+0kd6Rf6dOWr7meOyz8z
+MamuKqVfiZV0NRjGHsaBEd4yidvaLa+w8ugbrA3TodmlOlV1J/v2lN0L/Hep/908
+4RqjbF34Qmvvc/LMOATqDEPyyR8bTdbg97ab1YnhhEQ=
+6.1、密文前叠加加密密文MD5
+{
+	"SecondAuthentication": "PhysicsCode",
+	"Date": "cb23b555afa7f922b9e8e83a5a11f725U2FsdGVkX1+WiuVOQx02pRaCnmA9xed/+86yzc26VDVGChg+FoiGONdDFx7evS5m
+8Wn1OJlOxV8jqcgKbbTzQaSacddVEV3Zg0lGvMOStepx3UVb8LskDmkWy+SInpcQ
+TuhBj3pilkpBybpkFZ0+RCbqayTUjxt2Jt54pNBU3Rvx3rS/P0GNOkpPaAWpl1Sd
+n6fMrn5THOBf5HUntdlcJsQHynLe6A7kh8eLJ92lp0lA+0kd6Rf6dOWr7meOyz8z
+MamuKqVfiZV0NRjGHsaBEd4yidvaLa+w8ugbrA3TodmlOlV1J/v2lN0L/Hep/908
+4RqjbF34Qmvvc/LMOATqDEPyyR8bTdbg97ab1YnhhEQ="
+}
+7、主账号加密密文：
+U2FsdGVkX1/dpiSrAJqB0Sr51USqB1HeE5QrDFI40A4R4Ek9M1CsSs+aBC15FBM9
+86EKHWc3J/i2KYQpEVeAXRor7Hv+4YNTRKwF4we2deqQIjGW7/X+y4CvJpJPp0ha
+jXrC4qhHHm3+17O8Ji6HiZ73/URuoo3E5EGIfhdIGLU+Z20GRFehKbxhrNM9IR0v
+Bdtpdclk5GHbFtiXsN4YjKgBP5vwaARCw9S+FEaDfgwZR90TlMNz9ijJ+tTNvXlg
+eRVLSL0JN5/VRbZsPU8whIGZJsqlrZd68b59CWAC4WS/EejhIvLDnu6iAUbYGzhe
+JZv7WjjYmxLNz2LYFQZadNW+ORUsy6huDDZ7FX4DAEGhuIRt+LBuNa5iJ98zjeh8
+lhbLp5HI9fy9ZGLTxL9Ismk/OHy9fKzU4+ML+rgrLP+2vbNkdmKdY/+PcSytsnGq
+joLpDV1VOrzm3J6tyMs00ywTwiSFI4YWwtoROSRRklSDmQ0atiZXJIUxGWNIOevL
+5k5++1aswvZ7qA7Ty4mntE0SfYQ63cEfpcCym2XrTFKhY8Ju1uxr4pMcQg4mNGtZ
+avVxzfJjszLTsmkM9EmCe3bOvocyDJaO5M5LARi4y/QXcB9MWC1U/TJqO4j6oj3Y
+8、存储
+f4f61d46bf72768e175c628b3ff33a95U2FsdGVkX1/dpiSrAJqB0Sr51USqB1HeE5QrDFI40A4R4Ek9M1CsSs+aBC15FBM9
+86EKHWc3J/i2KYQpEVeAXRor7Hv+4YNTRKwF4we2deqQIjGW7/X+y4CvJpJPp0ha
+jXrC4qhHHm3+17O8Ji6HiZ73/URuoo3E5EGIfhdIGLU+Z20GRFehKbxhrNM9IR0v
+Bdtpdclk5GHbFtiXsN4YjKgBP5vwaARCw9S+FEaDfgwZR90TlMNz9ijJ+tTNvXlg
+eRVLSL0JN5/VRbZsPU8whIGZJsqlrZd68b59CWAC4WS/EejhIvLDnu6iAUbYGzhe
+JZv7WjjYmxLNz2LYFQZadNW+ORUsy6huDDZ7FX4DAEGhuIRt+LBuNa5iJ98zjeh8
+lhbLp5HI9fy9ZGLTxL9Ismk/OHy9fKzU4+ML+rgrLP+2vbNkdmKdY/+PcSytsnGq
+joLpDV1VOrzm3J6tyMs00ywTwiSFI4YWwtoROSRRklSDmQ0atiZXJIUxGWNIOevL
+5k5++1aswvZ7qA7Ty4mntE0SfYQ63cEfpcCym2XrTFKhY8Ju1uxr4pMcQg4mNGtZ
+avVxzfJjszLTsmkM9EmCe3bOvocyDJaO5M5LARi4y/QXcB9MWC1U/TJqO4j6oj3Y
+a208071b0e6c4c9f5f50775a7401abf4
+
+
+
+
+解密步骤（物理密码）：
+1、获取文件的MD532：  a208071b0e6c4c9f5f50775a7401abf4
+1.1、校验文件MD532码：f4f61d46bf72768e175c628b3ff33a9
+2、校验主账号MD532码。
+3、获取主账号解密密钥((HMACSHA512+MD532)>MD532)：0e5615ccd29d2ce585d229ca988a2b3a
+4、主密码解密后内容：
+{
+	"SecondAuthentication": "PhysicsCode",
+	"Date": "cb23b555afa7f922b9e8e83a5a11f725U2FsdGVkX1+WiuVOQx02pRaCnmA9xed/+86yzc26VDVGChg+FoiGONdDFx7evS5m
+8Wn1OJlOxV8jqcgKbbTzQaSacddVEV3Zg0lGvMOStepx3UVb8LskDmkWy+SInpcQ
+TuhBj3pilkpBybpkFZ0+RCbqayTUjxt2Jt54pNBU3Rvx3rS/P0GNOkpPaAWpl1Sd
+n6fMrn5THOBf5HUntdlcJsQHynLe6A7kh8eLJ92lp0lA+0kd6Rf6dOWr7meOyz8z
+MamuKqVfiZV0NRjGHsaBEd4yidvaLa+w8ugbrA3TodmlOlV1J/v2lN0L/Hep/908
+4RqjbF34Qmvvc/LMOATqDEPyyR8bTdbg97ab1YnhhEQ="
+}
+5、获取物理密码客户存储：U2FsdGVkX19yTwta2JVi9BmFx1/SoeItS0qhzL4BmRk=
+5.1、解压获取密码正本：123cfpCFP321
+5.2、密码本MD532：cb23b555afa7f922b9e8e83a5a11f725
+6、二次解密密文后内容：
+{
+	"SecondAuthentication": "PhysicsCode",
+	"Date": [{
+		"key": "主密码",
+		"value": "真实的密码"
+	}, {
+		"key": "用户的第二个密码",
+		"value": "真实的密码"
+	}, {
+		"key": "U盾密码",
+		"value": "真实的U盾密码"
+	}]
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

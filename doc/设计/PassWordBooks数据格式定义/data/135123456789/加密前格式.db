@@ -1,0 +1,14 @@
+{
+	"SecondAuthentication": "null,authEmailCode,authPhoneCode,PhysicsCode",
+	"PassWord":"主密码",
+	"Data": [{
+		"key": "用户自定义第一个密码",
+		"value": "真实的密码"
+	}, {
+		"key": "用户的第二个密码",
+		"value": "真实的密码"
+	}, {
+		"key": "U盾密码",
+		"value": "真实的U盾密码"
+	}]
+}

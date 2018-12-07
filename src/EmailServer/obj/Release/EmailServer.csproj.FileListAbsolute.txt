@@ -1,0 +1,6 @@
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\PassWordBooks\EmailServer\bin\Release\EmailServer.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\PassWordBooks\EmailServer\bin\Release\EmailServer.pdb
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\PassWordBooks\EmailServer\bin\Release\log4net.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\PassWordBooks\EmailServer\bin\Release\log4net.xml
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\PassWordBooks\EmailServer\obj\Release\EmailServer.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\PassWordBooks\EmailServer\obj\Release\EmailServer.pdb

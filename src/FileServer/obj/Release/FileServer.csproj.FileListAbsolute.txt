@@ -1,0 +1,7 @@
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\PassWordBooks\FileServer\bin\Release\FileServer.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\PassWordBooks\FileServer\bin\Release\FileServer.pdb
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\PassWordBooks\FileServer\bin\Release\EncryptAndDecodeServer.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\PassWordBooks\FileServer\bin\Release\EncryptAndDecodeServer.pdb
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\PassWordBooks\FileServer\obj\Release\FileServer.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\PassWordBooks\FileServer\obj\Release\FileServer.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\PassWordBooks\FileServer\obj\Release\FileServer.pdb

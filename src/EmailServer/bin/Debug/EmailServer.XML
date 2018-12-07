@@ -1,0 +1,119 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>EmailServer</name>
+    </assembly>
+    <members>
+<<<<<<< HEAD
+        <member name="T:EmailServer.EmailServer">
+            <summary>
+            邮件服务
+            </summary>
+        </member>
+        <member name="M:EmailServer.EmailServer.#ctor">
+            <summary>
+            邮件服务
+            </summary>
+        </member>
+        <member name="F:EmailServer.EmailServer._clientSmtp">
+            <summary>
+            邮件服务
+            </summary>
+        </member>
+        <member name="M:EmailServer.EmailServer.GetInstance">
+            <summary>
+            获取邮件服务的地址
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:EmailServer.EmailServer.initEmailServer">
+            <summary>
+            邮件服务
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:EmailServer.EmailServer.initEmailServer(System.Int32)">
+            <summary>
+            初始化用于检查配置的账号等相关信息
+            </summary>
+            <param name="accountKey">初始化具体使用某一套账号发送</param>
+            <returns></returns>
+        </member>
+        <member name="M:EmailServer.EmailServer.SaveEmailAccount(System.String,System.String,System.Int32,System.String)">
+            <summary>
+            保存邮箱账号
+            </summary>
+            <param name="account">账号</param>
+            <param name="password">密码</param>
+            <param name="port">端口</param>
+            <param name="serverpath">服务地址</param>
+        </member>
+        <member name="M:EmailServer.EmailServer.SendEmailTest">
+            <summary>
+            发送测试邮件测试邮箱用户配置账号的时候使用
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:EmailServer.EmailServer.SendVerCodeByEmail(System.String,System.String)">
+            <summary>
+            通过邮件发送验证码
+            </summary>
+            <param name="verCode">验证码</param>
+            <param name="emailAddress">目的地邮箱地址</param>
+            <returns></returns>
+        </member>
+        <member name="M:EmailServer.EmailServer.CreateMessageModel">
+            <summary>
+            创建一个邮件对象
+            </summary>
+            <returns></returns>
+        </member>
+=======
+>>>>>>> 3eadf37... 初始版本
+        <member name="T:EmailServer.IEmailServer">
+            <summary>
+            邮箱相关服务
+            </summary>
+        </member>
+<<<<<<< HEAD
+        <member name="M:EmailServer.IEmailServer.SendVerCodeByEmail(System.String,System.String)">
+=======
+        <member name="M:EmailServer.IEmailServer.SendVerCodeByEmail(System.Int32,System.String)">
+>>>>>>> 3eadf37... 初始版本
+            <summary>
+            通过邮件发送验证码
+            </summary>
+            <param name="verCode">验证码</param>
+            <param name="emailAddress">目的地邮箱地址</param>
+            <returns></returns>
+        </member>
+        <member name="M:EmailServer.IEmailServer.SaveEmailAccount(System.String,System.String,System.Int32,System.String)">
+            <summary>
+            保存邮箱账号
+            </summary>
+            <param name="account">账号</param>
+            <param name="password">密码</param>
+            <param name="port">端口</param>
+            <param name="serverpath">服务地址</param>
+        </member>
+        <member name="M:EmailServer.IEmailServer.initEmailServer">
+            <summary>
+            初始化 用于检查配置的账号等相关信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:EmailServer.IEmailServer.initEmailServer(System.Int32)">
+            <summary>
+            初始化 用于检查配置的账号等相关信息
+            </summary>
+            <param name="accountKey">初始化具体使用某一套账号发送</param>
+            <returns></returns>
+        </member>
+        <member name="M:EmailServer.IEmailServer.SendEmailTest">
+            <summary>
+            发送测试邮件测试邮箱用户配置账号的时候使用
+            </summary>
+            <returns></returns>
+        </member>
+    </members>
+</doc>
